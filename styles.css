@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /* Importacion de fuente 
+
+/* ========== RESETEO GENERAL ========== */
+* {
+    margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Hace que ancho/alto incluyan padding y border */
+    font-family: "Lato", sans-serif;
+}
+
+/* ========== CUERPO DE LA PÁGINA ========== */
+body {
+    background-color: #f5f7fa; /* Fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Contenedor principal centrado */
+.container {
+    width: 90%; /* Ocupa el 90% del ancho de la ventana */
+    max-width: 1200px; /* Pero no más de 1200px */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.slider-box{
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto-slider {
+    position: absolute;
+    color: #FFFFFF;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-slider h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+
+.slider-box img {
+    width: 100%;
+    height: 400px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin deformar */
+    display: block;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/* ========== BANNER SUPERIOR ========== */
+.banner {
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Fondo degradado */
+    color: white; /* Texto blanco */
+    padding: 15px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el contenido del banner */
+    font-size: 18px; /* Tamaño del texto */
+    position: relative; /* Permite ubicar elementos absolutos dentro */
+    overflow: hidden; /* Oculta contenido que se salga */
+}
+
+/* Contenedor interno del banner */
+.banner-content {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos bajen de línea si no caben */
+}
+
+.banner-text {
+    margin-right: 20px; /* Espacio a la derecha del texto */
+}
+
+/* Botón dentro del banner */
+.banner-button {
+    background-color: #ff7e5f; /* Fondo naranja */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 30px; /* Bordes redondeados estilo píldora */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+    font-weight: bold; /* Texto en negrita */
+    transition: all 0.3s ease; /* Animación suave en hover */
+}
+
+/* Efecto al pasar el mouse por el botón */
+.banner-button:hover {
+    background-color: #ff6b47; /* Color más oscuro */
+    transform: translateY(-2px); /* Se eleva un poco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra debajo */
+}
+
+/* Botón de cerrar el banner */
+.close-banner {
+    position: absolute; /* Se posiciona respecto al banner */
+    top: 10px; /* A 10px del borde superior */
+    right: 20px; /* A 20px del borde derecho */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color blanco */
+    font-size: 20px; /* Tamaño del icono */
+    cursor: pointer; /* Cursor tipo mano */
+}
+
+/* ========== CABECERA (HEADER) ========== */
+header {
+    background: #2c3e50; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+    margin-bottom: 20px; /* Espacio debajo del header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Contenido del header: logo y menú */
+.header-content {
+    display: flex; /* Flexbox para alinear */
+    justify-content: space-between; /* Espaciados a los extremos */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Título del header */
+header h1 {
+    font-size: 28px; /* Tamaño del texto */
+    background: linear-gradient(45deg, #3498db, #2ecc71); /* Degradado azul-verde */
+    -webkit-background-clip: text; /* Aplica el degradado al texto (Chrome/Safari) */
+    background-clip: text; /* Aplica el degradado al texto */
+    color: transparent; /* Hace invisible el color base, mostrando el degradado */
+}
+
+/* ========== NAVEGACIÓN ========== */
+nav ul {
+    display: flex; /* Menú en fila */
+    list-style: none; /* Quita viñetas */
+}
+
+nav ul li {
+    margin-left: 25px; /* Espacio entre opciones del menú */
+}
+
+nav a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 500; /* Semi-negrita */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación suave en hover */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil al pasar el mouse */
+}
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+.main-content {
+    display: flex; /* Distribuye contenido en fila */
+    gap: 20px; /* Espacio entre columnas */
+    margin-bottom: 30px; /* Espacio debajo */
+}
+
+main {
+    flex: 2; /* Ocupa más espacio que el aside */
+    background: white; /* Fondo blanco */
+    padding: 25px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+}
+
+article {
+    margin-bottom: 25px; /* Espacio inferior entre artículos */
+    padding-bottom: 25px; /* Relleno inferior */
+    border-bottom: 1px solid #eee; /* Línea separadora */
+}
+
+/* Último artículo sin línea divisoria */
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+article h2 {
+    color: #2c3e50; /* Título en azul oscuro */
+    margin-bottom: 15px;
+}
+
+/* ========== BARRA LATERAL ========== */
+aside {
+    flex: 1; /* Ocupa menos espacio que main */
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+aside h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6e8efb; /* Línea azul debajo del título */
+}
+
+/* ========== PIE DE PÁGINA ========== */
+footer {
+    background: #2c3e50; /* Fondo azul oscuro */
+    color: #ecf0f1; /* Texto gris claro */
+    text-align: center; /* Centrado */
+    padding: 25px 0; /* Espaciado vertical */
+    margin-top: 30px; /* Espacio encima */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centrado */
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: white; /* Íconos blancos */
+    margin: 0 10px; /* Espacio lateral */
+    font-size: 20px; /* Tamaño de íconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* ========== RESPONSIVE (pantallas pequeñas) ========== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Logo y menú uno debajo del otro */
+        text-align: center; /* Texto centrado */
+    }
+    
+    nav ul {
+        margin-top: 15px; /* Baja un poco el menú */
+        justify-content: center; /* Centrado */
+    }
+    
+    nav ul li {
+        margin: 0 10px; /* Espacio más pequeño entre opciones */
+    }
+    
+    .main-content {
+        flex-direction: column; /* Pasa de columnas a una sola */
+    }
+    
+    .banner-content {
+        flex-direction: column; /* Banner apilado */
+        gap: 10px; /* Espacio entre elementos */
+    }
+    
+    .banner-text {
+        margin-right: 0; /* Elimina margen lateral */
+        text-align: center; /* Centra texto */
+    }
+}
+
+/* ========== EFECTOS DE ANIMACIÓN ========== */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Inicia desde arriba, fuera de pantalla */
+    }
+    to {
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
+
+.banner {
+    animation: slideDown 1.5s ease-out; /* Aplica la animación al banner */
+}
+
+/* ========== BLOQUES DE EXPLICACIÓN PARA LA CLASE ========== */
+.explanation {
+    background: #e8f4fc; /* Fondo celeste */
+    border-left: 4px solid #3498db; /* Línea azul a la izquierda */
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0; /* Bordes redondeados en tres esquinas */
+}
+
+.explanation h3 {
+    color: #3498db; /* Título azul */
+    margin-bottom: 10px;
+}

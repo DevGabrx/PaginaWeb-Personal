@@ -15,6 +15,34 @@ body {
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
 }
 
+.logo{
+    width: 120px;
+    height: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #a3a1a1;
+}
+
+.nav-list{
+    list-style: none;
+    gap: 20px;
+    display: flex;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
 .contenedor-slider{
     width: 100%;
     height: 100vh;
@@ -53,9 +81,9 @@ body {
 }
 
 .slider .info p{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 3.5px;
     margin-bottom: 15px;
 
 }
@@ -66,7 +94,7 @@ body {
 }
 
 /* ========== BOTONES DEL SLIDER ========== */
-.slider-botones button {
+.slider-botones {
     background-color: #3498db;
     color: #fff;
     border-radius: 25px;
@@ -80,9 +108,67 @@ body {
     border: none;
 }
 
-.slider-botones button:hover {
+.slider-botones :hover {
     background-color: #217dbb;
     transform: translateY(-2px) scale(1.04);
 }
 
+.contenedor-slider .swiper-pagination-bullet{
+    background: #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    transition: 0.3s;
+}
 
+.contenedor-slider .swiper-pagination-bullet-active{
+    background: #3498db;
+    opacity: 1;
+    width: 12px;
+    border-radius: 7px;
+}
+
+
+.contenedor-slider .swiper-button-next,
+.contenedor-slider .swiper-button-prev{
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+     .abrir-menu,
+     .cerrar-menu{
+        display: block;
+ 
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #a3a1a1;
+        padding: 20px 20px;
+        bottom: 0;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+        z-index: 9999; 
+    }
+    
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+}

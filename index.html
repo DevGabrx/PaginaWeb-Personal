@@ -14,6 +14,17 @@
 <body>
     
 <header>
+    <img src="images/logo.png" alt="logo" class="logo">
+    <button  id="abrir" class="abrir-menu">abrir</button>
+    <nav class="nav" id="nav">
+        <button  id="cerrar" class="cerrar-menu">Cerrar</button>
+        <ul class="nav-list">
+            <li><a href="secciones/sobre-mi.html">Sobre mi</a></li>
+            <li><a href="secciones/conocimientos.html">Conocimientos</a></li>
+            <li><a href="secciones/proyectos.html">Proyectos</a></li>
+            <li><a href="secciones/contactame.html">Contactame</a></li>
+        </ul>
+    </nav>
 
 
 
@@ -26,22 +37,48 @@
         <div class = "contenedor-slider-interno swiper-wrapper">
             <div class="slider swiper-slide">
                 <img src="images/fondo1.jpg" class="imagen" >
-                <img src="images/fondo2.gif" class="imagen">
-                <img src="images/fondo3.gif" class="imagen">
-                <img src="images/fondo4.jpg" class="imagen">
                 <div class="info">
-                    <p>Desarrollador web</p>
-                    <h2>Gabriel Pino</h2>
-                    <div  class="slider-botones">
-                    <button>Click here</button>
-                    <button>Conocimientos</button>
-                    <button>Proyectos</button>
-                    <button>Contactame</button>
-                </div>
-
+                    <p>¿Quien soy?</p>
+                    <h2>Gabriel Pino | Desarrollador de software</h2>                    
+                    <button class="slider-botones"><a href="secciones/sobre-mi.html">!Haz click aqui!</a></button>
                 </div>
             </div>
+
+            <div class="slider swiper-slide">
+                <img src="images/fondo2.gif" class="imagen" >
+                <div class="info">
+                    <p>Echa un vistazo acerca de las tecnologias que manejo</p>
+                    <h2>Mis conocimientos</h2>                    
+                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                </div>
+            </div>
+
+            <div class="slider swiper-slide">
+                <img src="images/fondo3.gif" class="imagen" >
+                <div class="info">
+                    <p>He realizado diferentes proyectos , conocelos todos aqui! </p>
+                    <h2>Proyectos</h2>                    
+                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                </div>
+            </div>
+
+            <div class="slider swiper-slide">
+                <img src="images/fondo4.jpg" class="imagen" >
+                <div class="info">
+                    <p>Charlemos sobre desarrollo web!</p>
+                    <h2>Contactame</h2>                    
+                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                </div>
+            </div>
+
+        
         </div>
+
+            
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     </div>
 
 

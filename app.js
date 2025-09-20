@@ -1,11 +1,11 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
   loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable : true
   },
 
   // Navigation arrows
@@ -14,9 +14,18 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
+//Menu hamburgesa
+
+const nav = document.getElementById("nav")
+const botonCerrar = document.getElementById("cerrar")
+const botonAbrir = document.getElementById("abrir")
+
+botonAbrir.addEventListener("click",() =>{
+  nav.classList.add("visible")
+})
+
+botonCerrar.addEventListener("click",() =>{
+  nav.classList.remove("visible")
+})

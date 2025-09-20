@@ -4,132 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina web Personal</title>
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <!--Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
  
 </head>
 <body>
-    <!-- Banner -->
-    <div class="banner">
-        <button class="close-banner">&times;</button>
-        <div class="banner-content">
-            <div class="banner-text">¡Oferta especial! 20% de descuento en todos nuestros cursos.</div>
-            <button class="banner-button">Aprovechar ahora</button>
-        </div>
-    </div>
     
-    <!-- Cabecera -->
-    <header>
-        <div class="container header-content">
-            <h1>Desarrollador web</h1>
-            <nav>
-                <ul>
-                    <li><a href="secciones/sobre-mi.html">Sobre mi </a></li>
-                    <li><a href="secciones/conocimientos.html">Conocimientos</a></li>
-                    <li><a href="secciones/proyectos.html">Proyectos</a></li>
-                    <li><a href="secciones/contactame.html">Contactame</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+
+
+
+</header>
+
     
-    <div class="container">
-        
-        <div class="slider-box">
 
-            <ul>
-                <li>
-                    <a href="sobre-mi.html"><img src="images/fondo1.jpg" alt=""></a>
-                    <div class="texto-slider">
-                        <h2>Quien soy </h2>
-                        <p>Soy un estudiante de desarrollo de software , Actualmente tengo 20 años.</p>
-                    </div>
-                </li>
+<main>
+    <div class="contenedor-slider swiper">
+        <div class = "contenedor-slider-interno swiper-wrapper">
+            <div class="slider swiper-slide">
+                <img src="images/fondo1.jpg" class="imagen" >
+                <img src="images/fondo2.gif" class="imagen">
+                <img src="images/fondo3.gif" class="imagen">
+                <img src="images/fondo4.jpg" class="imagen">
+                <div class="info">
+                    <p>Desarrollador web</p>
+                    <h2>Gabriel Pino</h2>
+                    <div  class="slider-botones">
+                    <button>Click here</button>
+                    <button>Conocimientos</button>
+                    <button>Proyectos</button>
+                    <button>Contactame</button>
+                </div>
 
-                <li>
-                    <a href="conocimientos.html"><img src="images/fondo2.gif" alt=""></a>
-                    <div class="texto-slider">
-                        <h2>Conocimientos</h2>
-                        <p>HTML , CSS Y JAVASCRIPT</p>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="proyectos.html"><img src="images/fondo3.gif" alt=""></a>
-                    <div class="texto-slider">
-                        <h2>Proyectos</h2>
-                        <p>Aqui colocare una descripcion cuando la tenga</p>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="contactame.html"><img src="images/fondo4.jpg" alt=""></a>
-                    <div class="texto-slider">
-                        <h2>Contactame</h2>
-                        <p>Contactame aqui :D</p>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-        
-        
-        <div class="main-content">
-            <main>
-                <article>
-                    <h2>Introducción a la Maquetación CSS</h2>
-                    <p>CSS nos permite crear diseños atractivos y funcionales para nuestras páginas web. En esta clase aprenderemos a maquetar una página completa con un banner promocional, header, menú de navegación, contenido principal y pie de página.</p>
-                </article>
-                
-                <article>
-                    <h2>Conceptos Clave para Maquetar</h2>
-                    <p>Algunos de los conceptos más importantes que veremos hoy:</p>
-                    <ul>
-                        <li>Modelo de caja (box model)</li>
-                        <li>Flexbox para layouts</li>
-                        <li>Posicionamiento de elementos</li>
-                        <li>Diseño responsive con media queries</li>
-                        <li>Uso de gradientes y sombras</li>
-                    </ul>
-                </article>
-            </main>
-            
-            <aside>
-                <h3>Recursos Adicionales</h3>
-                <p>Para profundizar en maquetación CSS, te recomendamos:</p>
-                <ul>
-                    <li>Documentación de MDN Web Docs</li>
-                    <li>Curso de Flexbox en CSS-Tricks</li>
-                    <li>Prácticas con Grid Layout</li>
-                    <li>Ejemplos de diseño responsive</li>
-                </ul>
-            </aside>
-        </div>
-        
-        <!-- Explicación de conceptos -->
-        <div class="explanation">
-            <h3>Conceptos aplicados en este ejemplo</h3>
-            <p><strong>Flexbox:</strong> Se utiliza para alinear los elementos del banner, el header y el contenido principal.</p>
-            <p><strong>Modelo de caja:</strong> Todos los elementos tienen box-sizing: border-box para un control más preciso del tamaño.</p>
-            <p><strong>Media queries:</strong> El diseño se adapta a dispositivos móviles con cambios en la disposición de los elementos.</p>
-        </div>
-    </div>
-    
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2023 Clase de Maquetación CSS. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="#">📱</a>
-                <a href="#">💻</a>
-                <a href="#">📚</a>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script>
-        // Script simple para cerrar el banner
-        document.querySelector('.close-banner').addEventListener('click', function() {
-            document.querySelector('.banner').style.display = 'none';
-        });
-    </script>
+
+    </main>
+    <!--Script de swriper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina web Personal</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
 
     <!--Swiper -->
@@ -15,9 +18,9 @@
     
 <header>
     <img src="images/logo.png" alt="logo" class="logo">
-    <button  id="abrir" class="abrir-menu">abrir</button>
+    <button  id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
     <nav class="nav" id="nav">
-        <button  id="cerrar" class="cerrar-menu">Cerrar</button>
+        <button  id="cerrar" class="cerrar-menu"><i class="bi bi-x-circle"></i></button>
         <ul class="nav-list">
             <li><a href="secciones/sobre-mi.html">Sobre mi</a></li>
             <li><a href="secciones/conocimientos.html">Conocimientos</a></li>
@@ -45,34 +48,35 @@
             </div>
 
             <div class="slider swiper-slide">
-                <img src="images/fondo2.gif" class="imagen" >
+                <img src="images/fondo2.jpg" class="imagen" >
                 <div class="info">
                     <p>Echa un vistazo acerca de las tecnologias que manejo</p>
                     <h2>Mis conocimientos</h2>                    
-                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                    <button class="slider-botones"><a href="secciones/conocimientos.html">!Haz click aqui!</a></button>
                 </div>
             </div>
 
             <div class="slider swiper-slide">
-                <img src="images/fondo3.gif" class="imagen" >
+                <img src="images/fondo3.jpg" class="imagen" >
                 <div class="info">
                     <p>He realizado diferentes proyectos , conocelos todos aqui! </p>
                     <h2>Proyectos</h2>                    
-                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                    <button class="slider-botones"><a href="secciones/proyectos.html">!Haz click aqui!</a></button>
                 </div>
             </div>
 
             <div class="slider swiper-slide">
-                <img src="images/fondo4.jpg" class="imagen" >
+                <img src="images/fondo4.gif" class="imagen" >
                 <div class="info">
                     <p>Charlemos sobre desarrollo web!</p>
                     <h2>Contactame</h2>                    
-                    <button class="slider-botones"><a>!Haz click aqui!</a></button>
+                    <button class="slider-botones"><a href="secciones/contactame.html">!Haz click aqui!</a></button>
                 </div>
             </div>
 
         
         </div>
+
 
             
     <div class="swiper-pagination"></div>
@@ -80,6 +84,8 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
     </div>
+
+
 
 
     </main>

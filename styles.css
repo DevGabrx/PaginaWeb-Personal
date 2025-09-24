@@ -24,7 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: #a3a1a1;
+    background-color: #121212;
 }
 
 .nav-list{
@@ -40,7 +40,7 @@ header{
 
 .nav-list a{
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     transition: color 0.3s;
 }
 .contenedor-slider{
@@ -63,6 +63,7 @@ header{
     width: 100%;
     height: 100vh;
     object-fit: cover;
+
 }
 
 .slider .info{
@@ -88,8 +89,7 @@ header{
 
 }
 .slider .info h2{
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2rem;
     margin-bottom: 25px;
 }
 
@@ -97,21 +97,30 @@ header{
 .slider-botones {
     background-color: #3498db;
     color: #fff;
-    border-radius: 25px;
-    padding: 12px 32px;
-    margin: 8px 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
-.slider-botones :hover {
-    background-color: #217dbb;
-    transform: translateY(-2px) scale(1.04);
+.slider-botones:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(41, 128, 185, 0.4);
 }
+
+
+a{
+    text-decoration: none;
+    color: #fff;    
+}
+
+
 
 .contenedor-slider .swiper-pagination-bullet{
     background: #fff;
@@ -140,6 +149,9 @@ header{
      .abrir-menu,
      .cerrar-menu{
         display: block;
+        border: none;
+        background-color: transparent;
+        color: #fff;
  
     }
 
@@ -154,7 +166,7 @@ header{
         position: absolute;
         top: 0px;
         right: 0px;
-        background-color: #a3a1a1;
+        background-color: #121212;
         padding: 20px 20px;
         bottom: 0;
         box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);

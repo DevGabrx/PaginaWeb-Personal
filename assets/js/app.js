@@ -14,6 +14,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  autoplay:{
+    delay : 4000,
+     disableOnInteraction: false
+  }
+
 });
 
 //Menu hamburgesa

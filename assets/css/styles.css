@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /* Importacion de fuente 
+
+/* ========== RESETEO GENERAL ========== */
+* {
+    margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Hace que ancho/alto incluyan padding y border */
+    font-family: "Lato", sans-serif;
+}
+
+/* ========== CUERPO DE LA PÁGINA ========== */
+body {
+    background-color: #f5f7fa; /* Fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #121212;
+}
+
+.nav-list{
+    list-style: none;
+    gap: 20px;
+    display: flex;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.contenedor-slider{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-slider-interno{
+    width: 100%;
+    height: 100vh;
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider .imagen{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.slider .info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.slider .info p{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+    margin-bottom: 15px;
+
+}
+.slider .info h2{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* ========== BOTONES DEL SLIDER ========== */
+.slider-botones {
+
+
+    background-color: #6A0DAD;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slider-botones:hover {
+    background-color: #9C27B0;  
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;    
+}
+
+
+
+.contenedor-slider .swiper-pagination-bullet{
+    background: #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    transition: 0.3s;
+}
+
+.contenedor-slider .swiper-pagination-bullet-active{
+    background: #6A0DAD;
+    opacity: 1;
+    width: 12px;
+    border-radius: 7px;
+}
+
+
+.contenedor-slider .swiper-button-next,
+.contenedor-slider .swiper-button-prev{
+    color: #fff;
+}
+
+
+
+#introduccion-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    width: 100%;
+    background-color: #121212;
+    color: #fff;
+}
+.introduccion-interno{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+    background-color: #1f1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);;
+}
+
+#foto-introduccion{
+    width: 400px;
+    height: 200px;  
+    object-fit: cover;
+}
+
+.introduccion-interno p{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    align-items: center;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer p{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+
+/* ------------pagina sobre mi -------------- */
+
+.main-sobre-mi{
+    background-color: #121212;
+
+}
+
+.contenedor-sobre-mi{
+    display: flex;
+    flex-direction: row;
+    background-color: #1f1c1c;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}   
+
+.sobre-mi-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-yo{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 20px;
+}
+
+.banderas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; /* Espacio entre banderas */
+    margin-bottom: 15px;
+}
+
+
+.flag-ven,
+.flag-col{
+    width: 40px;
+    height: auto;
+
+}
+
+.sobre-mi-texto{
+    max-width: 800px;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+     .abrir-menu,
+     .cerrar-menu{
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+ 
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #121212;
+        padding: 20px 20px;
+        bottom: 0;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+        z-index: 9999; 
+    }
+    
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .contenedor-slider{
+        height: 60vh;
+    }   
+
+    .contenedor-slider-interno{
+        height: 60vh;
+    }
+
+    .slider{
+        height: 60vh;
+    }
+    .slider .imagen{
+        height: 60vh;
+    }
+    .slider .info{
+        height: 60vh;
+    }
+    .slider .info h2{
+        font-size: 1.5rem;
+    }
+
+    .slider .info p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    #introduccion-content{
+        padding: 30px 10px;
+    }
+    .introduccion-interno{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .introduccion-interno p{
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    #foto-introduccion{
+        width: 100%;
+        height: auto;  
+        object-fit: cover;
+    }
+
+    .footer{
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* pagina sobre mi */
+
+    .contenedor-sobre-mi{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sobre-mi-img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto-yo{
+        width: 200px;
+        height: 250px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-mi-texto{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .banderas{
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .flag-col,
+    .flag-ven{
+        width: 30px;
+        height: auto;
+        object-fit: cover;
+        
+    }
+
+}

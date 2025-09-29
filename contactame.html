@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!--Favicon-->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
@@ -12,7 +15,7 @@
 </head>
 <body>
     <header>
-    <img src="assets/images/logo.png" alt="logo" class="logo">
+    <img src="assets/images/logo2.png" alt="logo" class="logo">
     <button  id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
     <nav class="nav" id="nav">
         <button  id="cerrar" class="cerrar-menu"><i class="bi bi-x-circle"></i></button>
@@ -25,6 +28,70 @@
     </nav>
 
 </header>
+
+<main class="main-contactame">
+    <div class="form-contenedor">
+        <h3>Contactame a traves de este formulario </h3>
+    <div class="form-interno">
+        <form class="formulario">
+            <label  for="nombre">Nombre completo</label>
+            <input type="text" placeholder="Tu Nombre aqui" required id="nombre">
+
+            <label for="correo">Correo electronico</label>
+            <input type="email" placeholder="ejemplo@gmail.com" required id="correo">
+
+            <label for="numero-tlf">Numero de telefono</label>
+            <input type="number"  maxlength="10" placeholder="Tu numero telefonico aqui " required>
+
+            <label for="mensaje">Deja tu mensaje</label>
+            <textarea placeholder ="Deja tu mensaje....." id="mensaje"></textarea>
+
+            <div class="checkbox-contenedor">
+                <label for="datos">Aceptas el uso de tus datos?</label>
+                <input type="checkbox" id="datos">
+                
+            </div>
+
+            <input type="submit" value="Enviar" class="submit-enviar">
+
+            
+
+        </form>
+    </div>
+
+    </div>
+
+
+</main>
+
+<footer class="footer">
+        <ul class="menu-footer">
+            <li>
+                <a href="https://www.youtube.com/watch?v=jHWBFyZcLPg" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/watch?v=jHWBFyZcLPg" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/watch?v=jHWBFyZcLPg" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/watch?v=jHWBFyZcLPg" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=jHWBFyZcLPg" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>
+            </li>
+
+            <li>
+                <a href="https://github.com/DevGabrx" target="_blank"  rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            </li>
+        </ul>
+
+        <p>Creado Por Gabriel Pino |  © 2025 All rights reserved.</p>
+    </footer>
 
     <!--Script de swriper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

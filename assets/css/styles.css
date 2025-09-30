@@ -10,7 +10,7 @@
 
 /* ========== CUERPO DE LA PÁGINA ========== */
 body {
-    background-color: #f5f7fa; /* Fondo gris claro */
+    background-color:#121212; /* Fondo gris claro */
     color: #333; /* Color de texto gris oscuro */
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
 }
@@ -58,6 +58,7 @@ header{
     height: 100vh;
     position: relative;
 }
+
 
 .slider .imagen{
     width: 100%;
@@ -379,6 +380,100 @@ strong{
 
 /* Seccion proyectos */
 
+.proyectos-section {
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    background-color: #1f1c1c;
+}
+
+.proyectos-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.lista-proyectos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.proyecto-item {
+    display: flex;
+    align-items: flex-start;
+    background: #1f1c1c;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 24px;
+    gap: 24px;
+    color: #fff;
+    border: 3px solid #6A0DAD;
+}
+
+.proyecto-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #e9ecef;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.proyecto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.proyecto-titulo {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.proyecto-descripcion {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.proyecto-tecnologias {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.tecnologia {
+    background: #6A0DAD;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+.tecnologia:hover {
+    background: #9C27B0;
+    transform: scale(1.1);
+}
+
+.proyecto-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.2s;;
+}
+.proyecto-github:hover {
+    color: #9C27B0; 
+    text-decoration: underline;
+}
+
 /* Seccion Contactame */
 
 .main-contactame{
@@ -615,8 +710,50 @@ textarea{
         height: 80px;
     }
 
-
-
+    /* Seccion proyectos */
+    .proyectos-section {
+            padding: 16px 4px;
+            max-width: 98vw;
+        }
+        .lista-proyectos {
+            gap: 20px;
+        }
+        .proyecto-item {
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            gap: 12px;
+        }
+        .proyecto-img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 8px;
+        }
+        .proyecto-info {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+        }
+        .proyecto-titulo {
+            font-size: 1.1rem;
+        }
+        .proyecto-descripcion {
+            font-size: 0.97rem;
+        }
+        .proyecto-tecnologias {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        .tecnologia {
+            font-size: 0.9rem;
+            padding: 3px 10px;
+        }
+        .proyecto-github {
+            font-size: 0.97rem;
+        }
+    }
 
     /* pagina contactame */
 
@@ -635,6 +772,3 @@ textarea{
         width: 100%;
     }
 
-
-
-}

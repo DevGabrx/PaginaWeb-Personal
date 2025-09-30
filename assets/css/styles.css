@@ -179,6 +179,7 @@ a{
     line-height: 2.0;
     max-width: 600px;
     margin: 0 20px;
+    text-align: justify;
 }
 
 .footer{
@@ -214,24 +215,53 @@ i{
 
 /* ------------pagina sobre mi -------------- */
 
-.main-sobre-mi{
+/* .main-sobre-mi{
     background-color: #121212;
-
+    min-height: 100vh;
+    
 }
 
 .contenedor-sobre-mi{
+    padding: 50px 0px;
     display: flex;
     flex-direction: row;
     background-color: #1f1c1c;
     color: #fff;
     align-items: center;
     justify-content: space-around;
-}   
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: auto;
+}    */
+
+.main-sobre-mi{
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-sobre-mi{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #1f1c1c;
+    border-radius: 25px;
+    flex-direction: row;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 32px;
+    gap: 80px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
 
 .sobre-mi-img{
     display: flex;
     flex-direction: column;
 }
+
 
 .foto-yo{
     width: 300px;
@@ -239,6 +269,8 @@ i{
     object-fit: cover;
     border-radius: 100px;
     margin: 20px;
+    box-shadow: 0 4px 15px #6A0DAD;
+
 }
 
 .banderas{
@@ -272,6 +304,7 @@ i{
     font-size: 1.1rem;
     line-height: 2.4;
     padding: 20px;
+    text-align: justify;
 }
 
 strong{
